@@ -81,8 +81,17 @@
       nav > *,
       main > *,
       footer > * {
-        width: 1080px;
+        width: 85%;
         margin: 0 auto;
+      }
+
+      @media (min-width: 1080px) {
+        header > *,
+        nav > *,
+        main > *,
+        footer > * {
+          width: 1080px;
+        }
       }
 
       #global-error {

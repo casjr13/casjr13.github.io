@@ -10,12 +10,20 @@
   h1 {
     color: #fff;
     font-family: Quicksand, sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     margin: 0 auto;
     position: relative;
     text-align: right;
     text-shadow: 2px 2px 2px #000;
     top: 75%;
-    width: 1080px;
+    width: 85%;
+
+    @media (min-width: 768px) {
+      font-size: 3em;
+    }
+
+    @media (min-width: 1080px) {
+      width: 1080px;
+    }
   }
 }
