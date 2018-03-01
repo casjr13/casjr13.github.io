@@ -1,0 +1,135 @@
+.banner {
+  background-image: url("/images/mustang_desaturated.jpg");
+  background-position: center 85%;
+  background-size: cover;
+  height: calc(100vh - 116px);
+  width: 100%; }
+  .banner h1 {
+    color: #fff;
+    font-family: Quicksand, sans-serif;
+    font-size: 2em;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    text-shadow: 2px 2px 2px #000;
+    top: 75%;
+    width: 85%; }
+    @media (min-width: 768px) {
+      .banner h1 {
+        font-size: 3em; } }
+    @media (min-width: 1080px) {
+      .banner h1 {
+        width: 1080px; } }
+
+.snapchat .container {
+  display: flex;
+  flex-flow: column nowrap; }
+  .snapchat .container .caption {
+    flex: 1; }
+    .snapchat .container .caption h1 {
+      font-size: 2em; }
+    .snapchat .container .caption p {
+      font-size: 1.25em; }
+  @media (min-width: 1080px) {
+    .snapchat .container {
+      flex-direction: row;
+      justify-content: space-between; }
+      .snapchat .container .caption {
+        padding-right: 16px; } }
+
+.snapchat .snap-id {
+  display: inline-block;
+  text-align: center; }
+html {
+  background-color: #2d2d2d;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: Quicksand, sans-serif; }
+
+* > * {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Quicksand, sans-serif;
+  font-weight: 300; }
+
+header > *,
+nav > *,
+footer > *,
+.container {
+  margin: 0 auto;
+  width: 85%; }
+  @media (min-width: 1080px) {
+    header > *,
+    nav > *,
+    footer > *,
+    .container {
+      width: 1080px; } }
+
+header,
+nav,
+footer {
+  padding: 16px 8px; }
+
+header {
+  background-color: #202020;
+  color: rgba(255, 255, 255, 0.95); }
+
+nav {
+  background-color: #2d2d2d;
+  padding: 0 !important; }
+  nav ul {
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        border-bottom: 4px solid transparent;
+        color: rgba(255, 255, 255, 0.87);
+        display: inline-block;
+        padding: 16px;
+        text-decoration: none; }
+        nav ul li a.active {
+          border-bottom-color: #c90000;
+          color: white; }
+
+main {
+  background-color: #f1f1f1; }
+
+section {
+  background-color: #333333;
+  padding: 64px 32px; }
+  section:nth-child(2n) {
+    background-color: #3a3a3a; }
+
+footer {
+  border-top: 1px solid rgba(201, 0, 0, 0.45); }
+
+#global-error {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  border-radius: 4px;
+  padding: 20px; }
+
+button {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  cursor: pointer;
+  height: 36px;
+  min-width: 88px;
+  text-transform: uppercase;
+  transition: background-color ease-in-out .12s; }
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: rgba(255, 255, 255, 0.95); }
+
+p {
+  line-height: 1.75em; }
