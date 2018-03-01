@@ -11,6 +11,8 @@ import rootReducer from './reducers';
 import middleware from './middleware';
 import {errorMiddlewareFactory} from './middleware/core/errorMiddleware';
 
+import './index.scss';
+
 const history = createHistory();
 const store = createStore(
   combineReducers({

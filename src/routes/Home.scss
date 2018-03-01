@@ -1,11 +1,9 @@
 .banner {
-  background-attachment: fixed;
   background-image: url('/images/mustang_desaturated.jpg');
-  background-position: center top;
+  background-position: center 85%;
   background-size: cover;
   height: calc(100vh - 116px);
-  margin: -16px -8px;
-  width: calc(100% + 16px);
+  width: 100%;
 
   h1 {
     color: #fff;
@@ -25,5 +23,38 @@
     @media (min-width: 1080px) {
       width: 1080px;
     }
+  }
+}
+
+.snapchat {
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .caption {
+      flex: 1;
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.25em;
+      }
+    }
+
+    @media (min-width: 1080px) {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .caption {
+        padding-right: 16px;
+      }
+    }
+  }
+
+  .snap-id {
+    display: inline-block;
+    text-align: center;
   }
 }

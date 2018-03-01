@@ -1,0 +1,131 @@
+@import 'variables';
+
+html {
+  background-color: $html-bg;
+  color: $white;
+  font-family: Quicksand, sans-serif;
+}
+
+* > * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Quicksand, sans-serif;
+  font-weight: 300;
+}
+
+// Container
+%container,
+.container {
+  margin: 0 auto;
+  width: 85%;
+  
+  @media (min-width: 1080px) {
+    width: 1080px;
+  }
+}
+
+// Layout
+header,
+nav,
+footer {
+  padding: 16px 8px;
+  
+  & > * {
+    @extend %container;
+  }
+}
+
+header {
+  background-color: $header-bg;
+  color: $white;
+}
+
+nav {
+  background-color: $html-bg;
+  padding: 0 !important;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        $color: rgba($white, .87);
+        border-bottom: 4px solid transparent;
+        color: $color;
+        display: inline-block;
+        padding: 16px;
+        text-decoration: none;
+
+        &.active {
+          $color: rgba($white, 1);
+          border-bottom-color: $brand-color;
+          color: $color;
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-color: #f1f1f1;
+}
+
+section {
+  background-color: lighten($html-bg, 2.5%);
+  padding: 64px 32px;
+
+  &:nth-child(2n) {
+    background-color: lighten($html-bg, 5%);
+  }
+}
+
+footer {
+  $c: rgba($brand-color, .45);
+  border-top: 1px solid $c;
+}
+
+// Errors
+#global-error {
+  background-color: rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .45);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+// Buttons
+button {
+  $b: rgba($black, .08);
+  background-color: transparent;
+  border: 1px solid $b;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 36px;
+  min-width: 88px;
+  text-transform: uppercase;
+  transition: background-color ease-in-out .12s;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+// Paragraphs
+p {
+  line-height: 1.75em;
+}
