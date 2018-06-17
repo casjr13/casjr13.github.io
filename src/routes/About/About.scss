@@ -1,0 +1,44 @@
+.about {
+  .banner {
+    background-image: url('/images/jr.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 116px);
+    width: 100%;
+  }
+
+  section {
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+
+      .caption {
+        flex: 1;
+
+        h1 {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1.25em;
+        }
+      }
+
+      @media (min-width: 1080px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .caption {
+          padding-right: 16px;
+        }
+      }
+    }
+
+    .snap-id {
+      align-items: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+  }
+}

@@ -9,13 +9,14 @@ import AppNav from './AppNav';
 
 class AppLayout extends React.Component {
   render() {
+    const {children, dispatch, ...p} = this.props;
     return (
-      <div id="layout">
+      <div id="layout" {...p}>
         <AppHeader />
         <AppNav />
         <main>
           <AppError />
-          {this.props.children}
+          {children}
         </main>
         <AppFooter />
       </div>

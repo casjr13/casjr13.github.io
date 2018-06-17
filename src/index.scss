@@ -14,6 +14,18 @@ body {
   margin: 0;
 }
 
+// Anchors
+a {
+  border-bottom: 1px dotted rgba($white, .87);
+  color: inherit;
+  padding-bottom: 3px;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+}
+
 // Headings
 h1,
 h2,

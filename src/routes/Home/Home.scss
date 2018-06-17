@@ -1,0 +1,55 @@
+.home {
+  .banner {
+    background-image: url('/images/chrissalinasjr.jpg');
+    background-position: center top;
+    background-size: cover;
+    height: calc(100vh - 116px);
+    min-height: 50vw;
+    position: relative;
+    width: 100%;
+
+    img {
+      bottom: 25px;
+      filter: drop-shadow(1px 1px 1px #000);
+      height: 50px;
+      position: absolute;
+      right: 25px;
+    }
+  }
+
+  section {
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+
+      .caption {
+        flex: 1;
+
+        p {
+          font-size: 1.25em;
+        }
+      }
+
+      @media (min-width: 1080px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .caption {
+          padding-left: 16px;
+        }
+      }
+    }
+
+    .signature {
+      align-items: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      width: 25%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
