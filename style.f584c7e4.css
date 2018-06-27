@@ -1,0 +1,229 @@
+.home .banner {
+  background-image: url("/images/chrissalinasjr.jpg");
+  background-position: center top;
+  background-size: cover;
+  height: calc(100vh - 116px);
+  min-height: 50vw;
+  position: relative;
+  width: 100%; }
+  .home .banner img {
+    bottom: 25px;
+    -webkit-filter: drop-shadow(1px 1px 1px #000);
+            filter: drop-shadow(1px 1px 1px #000);
+    height: 50px;
+    position: absolute;
+    right: 25px; }
+
+.home section .container {
+  display: flex;
+  flex-flow: column nowrap; }
+  .home section .container .caption {
+    flex: 1; }
+    .home section .container .caption p {
+      font-size: 1.25em; }
+  @media (min-width: 1080px) {
+    .home section .container {
+      flex-direction: row;
+      justify-content: space-between; }
+      .home section .container .caption {
+        padding-left: 16px; } }
+
+.home section .signature {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%; }
+  @media (min-width: 1080px) {
+    .home section .signature {
+      width: 25%; } }
+  .home section .signature img {
+    width: 100%; }
+
+.gallery {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0; }
+  .gallery .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    transition: -webkit-filter ease-in-out 300ms;
+    transition: filter ease-in-out 300ms;
+    transition: filter ease-in-out 300ms, -webkit-filter ease-in-out 300ms;
+    width: 100%; }
+    .gallery .img:hover {
+      -webkit-filter: grayscale(0%);
+              filter: grayscale(0%); }
+    .gallery .img:before {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+    @media (min-width: 768px) {
+      .gallery .img {
+        width: 50%; } }
+    @media (min-width: 1000px) {
+      .gallery .img {
+        width: 33.33333%; } }
+    @media (min-width: 1200px) {
+      .gallery .img {
+        width: 25%; } }
+.about .banner {
+  background-image: url("/images/about.jpg");
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 116px);
+  width: 100%; }
+
+.about section .container {
+  display: flex;
+  flex-flow: column nowrap; }
+  .about section .container .caption {
+    flex: 1; }
+    .about section .container .caption h1 {
+      font-size: 2em; }
+    .about section .container .caption p {
+      font-size: 1.25em; }
+  @media (min-width: 1080px) {
+    .about section .container {
+      flex-direction: row;
+      justify-content: space-between; }
+      .about section .container .caption {
+        padding-right: 16px; } }
+
+.about section .snap-id {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; }
+.gaming .banner {
+  background-image: url("/images/gaming.jpg");
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 116px);
+  width: 100%; }
+
+.gaming .video {
+  display: inline-block;
+  height: 0;
+  padding: 56.25% 0 0;
+  position: relative;
+  width: 100%; }
+  .gaming .video > * {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+html {
+  background-color: #2d2d2d;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: Quicksand, sans-serif; }
+
+* > * {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+a {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.87);
+  color: inherit;
+  padding-bottom: 3px;
+  text-decoration: none; }
+  a:hover {
+    border-bottom-style: solid; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Quicksand, sans-serif;
+  font-weight: 300; }
+
+header > *,
+nav > *,
+footer > *,
+.container {
+  margin: 0 auto;
+  width: 85%; }
+  @media (min-width: 1080px) {
+    header > *,
+    nav > *,
+    footer > *,
+    .container {
+      width: 1080px; } }
+
+header,
+nav,
+footer {
+  padding: 16px 8px; }
+
+header {
+  background-color: #202020;
+  color: rgba(255, 255, 255, 0.95); }
+
+nav {
+  background-color: #2d2d2d;
+  padding: 0 !important; }
+  nav ul {
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      display: inline-block; }
+      nav ul li a {
+        border-bottom: 4px solid transparent;
+        color: rgba(255, 255, 255, 0.87);
+        display: inline-block;
+        padding: 16px;
+        text-decoration: none; }
+        nav ul li a.active {
+          border-bottom-color: #c90000;
+          color: white; }
+
+main {
+  background-color: #f1f1f1; }
+
+section {
+  background-color: #333333;
+  padding: 64px 32px; }
+  section:nth-child(2n) {
+    background-color: #3a3a3a; }
+
+footer {
+  border-top: 1px solid rgba(201, 0, 0, 0.45); }
+
+#global-error {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  border-radius: 4px;
+  padding: 20px; }
+
+button {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  cursor: pointer;
+  height: 36px;
+  min-width: 88px;
+  text-transform: uppercase;
+  transition: background-color ease-in-out .12s; }
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+    color: rgba(255, 255, 255, 0.95); }
+
+p {
+  line-height: 1.75em; }
