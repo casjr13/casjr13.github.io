@@ -1,0 +1,26 @@
+.gaming {
+  .banner {
+    background-image: url('/images/gaming.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 116px);
+    width: 100%;
+  }
+
+  .video {
+    display: inline-block;
+    height: 0;
+    padding: 56.25% 0 0;
+    position: relative;
+    width: 100%;
+
+    > * {
+      border: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
