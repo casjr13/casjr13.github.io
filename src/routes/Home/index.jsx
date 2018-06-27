@@ -5,15 +5,18 @@ import AppLayout from '../../containers/AppLayout';
 import './Home.scss';
 
 const images = [
-  "/images/gallery/20180622-SandiaPark02.jpg",
-  "/images/gallery/20180622-SandiaPark01.jpg",
-  "/images/gallery/20180622-Mustang01.jpg",
-  "/images/gallery/20180618-Mustang01.png",
-  "/images/gallery/20180618-Edgewood01.png",
-  "/images/gallery/20180526-Thunderbirds04.jpg",
-  "/images/gallery/20180526-Thunderbirds03.jpg",
-  "/images/gallery/20180526-Thunderbirds02.jpg",
-  "/images/gallery/20180526-Thunderbirds01.jpg",
+  "/images/thumbnails/dark1.jpg",
+  "/images/thumbnails/light1.jpg",
+  "/images/thumbnails/dark2.jpg",
+  "/images/thumbnails/light6.jpg",
+  "/images/thumbnails/light2.jpg",
+  "/images/thumbnails/dark5.jpg",
+  "/images/thumbnails/light5.jpg",
+  "/images/thumbnails/dark4.jpg",
+  "/images/thumbnails/dark6.jpg",
+  "/images/thumbnails/light4.jpg",
+  "/images/thumbnails/dark3.jpg",
+  "/images/thumbnails/light3.jpg",
 ];
 
 class Home extends React.Component {
