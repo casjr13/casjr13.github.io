@@ -5,31 +5,34 @@ import AppLayout from '../../containers/AppLayout';
 import './Home.scss';
 
 const images = [
-  "/images/thumbnails/dark1.jpg",
-  "/images/thumbnails/light1.jpg",
-  "/images/thumbnails/dark2.jpg",
-  "/images/thumbnails/light6.jpg",
-  "/images/thumbnails/light2.jpg",
-  "/images/thumbnails/dark5.jpg",
-  "/images/thumbnails/light5.jpg",
-  "/images/thumbnails/dark4.jpg",
-  "/images/thumbnails/dark6.jpg",
-  "/images/thumbnails/light4.jpg",
-  "/images/thumbnails/dark3.jpg",
-  "/images/thumbnails/light3.jpg",
+  "20141122-Wedding01.jpg",
+  "20141122-Wedding02.jpg",
+  "20161127-Jason01.jpg",
+  "20170713-Hummingbirds.jpg",
+  "20180526-Thunderbirds01.jpg",
+  "20180526-Thunderbirds02.jpg",
+  "20180526-Thunderbirds03.jpg",
+  "20180527-Mustang02.jpg",
+  "20180618-Edgewood01.jpg",
+  "20180622-Mustang01.jpg",
+  "20180622-SandiaPark01.jpg",
+  "20180622-SandiaPark02.jpg",
 ];
 
 class Home extends React.Component {
   render() {
-    const gallery = map(images, (imgPath, i) => {
-      const img = <i style={{backgroundImage: `url(${imgPath})`}}/>;
-      return <a
-        className="img"
-        href={imgPath}
-        key={`image${i}`}
-        target="_blank"
-      >{img}</a>;
-    });
+    const gallery = map(
+      images.sort((a, b) => (0.5 - Math.random())),
+      (name, i) => (
+        <a
+          className="img"
+          href={`/images/gallery/${name}`}
+          key={`image${i}`}
+          style={{backgroundImage: `url(/images/thumbnails/${name})`}}
+          target="_blank"
+        />
+      )
+    );
     return (
       <AppLayout className="home">
         <div className="banner">
