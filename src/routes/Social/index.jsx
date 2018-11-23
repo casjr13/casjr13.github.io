@@ -20,7 +20,7 @@ class Social extends React.Component {
       <section className="instagram">
         <div className="container">
           <h1>Follow me on Instagram!</h1>
-          <p><a href="https://instagram.com/thischris__" target="_blank">@ThisChris__</a></p>
+          <p>My Instagram profile is <a href="https://instagram.com/thischris__" target="_blank">@ThisChris__</a>. My profile consists of some of my photography, car, and life. Here are a dozen of my most recent instagram posts.</p>
           <InstagramFeed username="thischris__" />
         </div>
       </section>

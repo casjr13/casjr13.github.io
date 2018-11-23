@@ -42,8 +42,6 @@ class InstagramFeed extends React.Component {
       );
     }
 
-    console.log(feed);
-
     const images = _.map(feed, ({id, shortcode, thumbnail_src}) => {
       return (
         <a className="instagram-photo" key={id} href={`https://www.instagram.com/p/${shortcode}`} target="_blank">
