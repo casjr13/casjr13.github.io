@@ -18,16 +18,13 @@ class InstagramFeed extends React.Component {
   async componentDidMount() {
     const { username } = this.props;
 
-    // It will contain our photos' links
-    const feed = []
-
     try {
-      const userInfoSource = await Axios.get(`https://www.instagram.com/${username}/`)
+      const userInfoSource = await Axios.get(`https://www.instagram.com/${username}/`);
 
       // userInfoSource.data contains the HTML from Axios
-      const jsonObject = userInfoSource.data.match(/<script type="text\/javascript">window\._sharedData = (.*)<\/script>/)[1].slice(0, -1)
-      const userInfo = JSON.parse(jsonObject)
-      const mediaArray = userInfo.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges
+      const jsonObject = userInfoSource.data.match(/<script type="text\/javascript">window\._sharedData = (.*)<\/script>/)[1].slice(0, -1);
+      const userInfo = JSON.parse(jsonObject);
+      const mediaArray = userInfo.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
       const feed = _.map(mediaArray, "node");
       this.setState({feed});
     } catch (e) {

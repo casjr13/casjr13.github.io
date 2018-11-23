@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .photography {
   .banner {
     background-image: url('/images/photography.jpg');
@@ -8,6 +10,23 @@
   }
 
   section {
-    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    min-height: 750px;
+    
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 1 0 0px;
+      
+      iframe {
+        background-color: rgba(#fff, 0.08);
+        border: none;
+        box-shadow: $whiteframe-shadow-2dp;
+        flex: 1 0 0px;
+        padding: 16px;
+      }
+    }
   }
 }
