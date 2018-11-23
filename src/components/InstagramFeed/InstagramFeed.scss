@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.instagram-feed {
+    background-color: rgba(#fff, 0.08);
+    border-radius: 3px;
+    box-shadow: $whiteframe-shadow-2dp;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+
+    .instagram-photo {
+        border: none;
+        display: inline-block;
+        line-height: 0;
+        margin: 8px;
+        width: 30%;
+        
+        &:hover img {
+            box-shadow: $whiteframe-shadow-6dp;
+        }
+        
+        img {
+            transition: all ease-in-out 300ms;
+            width: 100%;
+            z-index: 0;
+        }
+    }
+}

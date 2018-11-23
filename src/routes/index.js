@@ -1,5 +1,6 @@
 export default [
   {path: '/', component: require('./Home').default, caption: 'Home'},
-  {path: '/about', component: require('./About').default, caption: 'About'},
+  {path: '/photography', component: require('./Photography').default, caption: 'Photography'},
+  {path: '/social', component: require('./Social').default, caption: 'Social'},
   {path: '/gaming', component: require('./Gaming').default, caption: 'Gaming'},
 ];

@@ -1,0 +1,23 @@
+.social {
+  .banner {
+    background-image: url('/images/social.jpg');
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 116px);
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .snapchat {
+    .snap-id {
+      align-items: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+  }
+}

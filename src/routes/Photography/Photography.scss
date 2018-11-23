@@ -1,0 +1,13 @@
+.photography {
+  .banner {
+    background-image: url('/images/photography.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    height: calc(100vh - 116px);
+    width: 100%;
+  }
+
+  section {
+    min-height: 100vh;
+  }
+}
